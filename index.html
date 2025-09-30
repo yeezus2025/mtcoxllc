@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MT.COX LLC Exchange</title>
+  <style>
+    body {
+      font-family: Verdana, Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 300px;
+      display: block;
+      margin: auto;
+    }
+    nav {
+      background: #444;
+      padding: 8px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 13px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .ticker {
+      background: #eee;
+      padding: 8px;
+      font-size: 13px;
+      border-bottom: 1px solid #ccc;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+    .ticker span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 20s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+    }
+    .layout {
+      display: flex;
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+    }
+    .main {
+      flex: 3;
+      background: #fff;
+      padding: 15px;
+      margin-right: 15px;
+      border: 1px solid #ccc;
+    }
+    .sidebar {
+      flex: 1;
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      text-align: center;
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 16px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 12px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: center;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    .withdraw, .apply {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .withdraw button, .apply a, .login-box button {
+      background: #c00;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .withdraw button:hover, .apply a:hover, .login-box button:hover {
+      background: #900;
+    }
+    .login-box {
+      margin-top: 20px;
+      text-align: left;
+    }
+    .login-box input {
+      width: 90%;
+      padding: 5px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      font-size: 12px;
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: #aaa;
+      font-size: 11px;
+      padding: 8px;
+      margin-top: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .status, .queue, .announcements, .chat, .about {
+      margin-top: 20px;
+      text-align: left;
+    }
+    .status table {
+      font-size: 11px;
+    }
+    .status-ok { color: green; font-weight: bold; }
+    .status-issue { color: red; font-weight: bold; }
+    .chat-box {
+      background: #111;
+      color: #0f0;
+      font-family: monospace;
+      padding: 10px;
+      height: 150px;
+      overflow: hidden;
+    }
+    .ceo {
+      margin-top: 15px;
+      font-style: italic;
+      padding: 10px;
+      border: 1px dashed #ccc;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="MT.COX logo">
+    <h1>The Exchange of Culture</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Markets</a>
+    <a href="#">Order Book</a>
+    <a href="#">Culture</a>
+    <a href="#">Login</a>
+  </nav>
+  <div class="ticker">
+    <span>⚠ Withdrawals Delayed Until 2027 ⚠ | $MTCOX Always Up 📈 | This is better than dog wif hat — this is cock with suit 🐓 | Powered by Cock Energy™</span>
+  </div>
+  <div class="layout">
+    <div class="main">
+      <h2>Fake Order Book</h2>
+      <table>
+        <tr><th>Market</th><th>Bid</th><th>Ask</th><th>Last Trade</th></tr>
+        <tr><td>$MTCOX/USD</td><td>69,000</td><td>69,420</td><td>69,420 🚀</td></tr>
+        <tr><td>$MTCOX/COPE</td><td>400</td><td>420</td><td>420 😂</td></tr>
+        <tr><td>$MTCOX/MEME</td><td>LOL</td><td>ROFL</td><td>LOL</td></tr>
+      </table>
+
+      <h2>Trade History</h2>
+      <table>
+        <tr><th>User</th><th>Pair</th><th>Amount</th><th>Status</th></tr>
+        <tr><td>rekt_me</td><td>$MTCOX/USD</td><td>100</td><td>Filled</td></tr>
+        <tr><td>anon69420</td><td>$MTCOX/COPE</td><td>69</td><td>Dumped</td></tr>
+        <tr><td>paperhands69</td><td>$MTCOX/MEME</td><td>420</td><td>Panic Sell</td></tr>
+      </table>
+
+      <div class="about">
+        <h2>About MT.COX LLC</h2>
+        <p>Born from the ashes of Mt. Gox, we’re back with a better name, a cock mascot, and the same broken withdrawals. This time, we promise nothing—except cock always up and memes forever.</p>
+        <p><b>This is better than dog wif hat — this is cock with suit.</b></p>
+        <div class="ceo">
+          <b>Sir Clucklesworth III — Chief Executive Cock (CEC)</b><br/>
+          “MT.COX is the CEX of the future — corrupt, broken, and delayed withdrawals… but at least we’re honest about it. and yes, this is better than dog wif hat, this is cock with suit.”
+        </div>
+      </div>
+
+      <div class="withdraw">
+        <button onclick="withdrawalExcuse()">
+          Withdraw Funds
+        </button>
+      </div>
+
+      <div class="apply">
+        <a href="#" id="applyLink" target="_blank">Apply Now — You’re Hired</a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h2>Cock Mascot</h2>
+      <img src="rooster2.png" alt="Cock in Suit Mascot">
+      <p>The Runner of the Trenches™</p>
+
+      <div class="login-box">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button onclick="loginError()">Login</button>
+      </div>
+
+      <div class="queue">
+        <h2>Withdrawal Queue</h2>
+        <p>You are #420,694 in line.<br/>Estimated wait: 3 years.</p>
+      </div>
+
+      <div class="status">
+        <h2>System Status</h2>
+        <table>
+          <tr><td>Deposits</td><td class="status-ok">Operational</td></tr>
+          <tr><td>Withdrawals</td><td class="status-issue">Broken ❌</td></tr>
+          <tr><td>Support Tickets</td><td class="status-issue">Ignored ❌</td></tr>
+          <tr><td>Bullposting</td><td class="status-ok">100% Operational ✅</td></tr>
+        </table>
+      </div>
+
+      <div class="announcements">
+        <h2>Announcements</h2>
+        <ul>
+          <li>We are experiencing unprecedented levels of cockposting.</li>
+          <li>MT.COX LLC has secured a strategic partnership with Nobody.</li>
+          <li>Please stop asking about withdrawals.</li>
+        </ul>
+      </div>
+
+      <div class="chat">
+        <h2>Community Chat</h2>
+        <div class="chat-box" id="chatBox"></div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    Powered by MT.COX LLC © 2025 | Not Financial Advice | 100% Cock-Backed Audit Report
+  </footer>
+
+  <script>
+    function withdrawalExcuse() {
+      const excuses = [
+        "Funds are safe (trust us).",
+        "Withdrawals delayed until 2027.",
+        "Please submit 420 more KYC forms.",
+        "We promise this isn’t like last time.",
+        "System upgrade in progress… forever."
+      ];
+      const excuse = excuses[Math.floor(Math.random() * excuses.length)];
+      alert(excuse);
+    }
+
+    function loginError() {
+      const errors = [
+        "Error 500: Unexpected Cock Failure.",
+        "Password incorrect (even if correct).",
+        "Login disabled — check back in 2027.",
+        "Cock authentication server not responding.",
+        "Account locked due to excessive cockposting."
+      ];
+      const error = errors[Math.floor(Math.random() * errors.length)];
+      alert(error);
+    }
+
+    // Live chat simulation
+    const messages = [
+      "@elonmusk: mt.cox rocks",
+      "@cz_binance: funds are safu (trust us).",
+      "@saylorbtc: I just bought 10,000 $MTCOX with leverage.",
+      "@vitaliketh: pls stop asking about withdrawals.",
+      "@goxxed: we’re back baby.",
+      "@cobie: cockposting is trending now.",
+      "@notchad: still waiting on my withdrawal since 2014."
+    ];
+
+    let index = 0;
+    function updateChat() {
+      const chatBox = document.getElementById("chatBox");
+      chatBox.innerHTML += messages[index] + "<br/>";
+      chatBox.scrollTop = chatBox.scrollHeight;
+      index = (index + 1) % messages.length;
+    }
+    setInterval(updateChat, 2000);
+
+    // Cryptic rotating X posts with logo link
+    const posts = [
+      "the trenches needed a runner. here you go 🐓 #mtcoxllc #forthetrenches https://imgur.com/a/m0qJOUt",
+      "mt.gox fell. mt.cox rises. history rhymes 🐓 #mtcoxllc #forthetrenches https://imgur.com/a/m0qJOUt",
+      "culture was lost. we dug it back up 🐓 #mtcoxllc #forthetrenches https://imgur.com/a/m0qJOUt",
+      "no roadmap, no trust, just cock energy 🐓 #mtcoxllc #forthetrenches https://imgur.com/a/m0qJOUt",
+      "the cex of the future isn’t safe. it’s funny 🐓 #mtcoxllc #forthetrenches https://imgur.com/a/m0qJOUt",
+      "memes are the liquidity. cope is the collateral 🐓 #mtcoxllc #forthetrenches https://imgur.com/a/m0qJOUt"
+    ];
+    document.getElementById("applyLink").addEventListener("click", function(event) {
+      const post = posts[Math.floor(Math.random() * posts.length)];
+      this.href = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(post);
+    });
+  </script>
+</body>
+</html>
